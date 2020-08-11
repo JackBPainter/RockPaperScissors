@@ -2,9 +2,11 @@ import React from "react"
 
 import { StyledMain } from "./styled/lib"
 
-const Win = () => {
+const Win = ({ playerSelection, botSelection }) => {
     return (
-        <StyledMain result={"win"}>Winner!</StyledMain>
+        <StyledMain result={"win"}>
+            Winner!
+        </StyledMain>
     )
 }
 
