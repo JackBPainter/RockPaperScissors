@@ -14,6 +14,9 @@ const App = () => {
     setBotSelection(botSelect())
   }, [])
 
+  console.log(playerSelection)
+  console.log(botSelection)
+
   return (
     <StyledBody>
       <StyledMain>
