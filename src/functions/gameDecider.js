@@ -12,18 +12,18 @@ export default function gameDecider(playerSelection, botSelection) {
         return <Win playerSelection={playerSelection} botSelection={botSelection} />
     }
     if(playerSelection === "rock" && botSelection === "paper") {
-        return <Lose playerSelection={playerSelection} botSelection={botSelection} />
+        return <Lose playerSelection={playerSelection} botSelection={botSelection} startCount={3} />
     }
     if(playerSelection === "paper" && botSelection === "rock") {
         return <Win playerSelection={playerSelection} botSelection={botSelection} />
     }
     if(playerSelection === "paper" && botSelection === "scissors") {
-        return <Lose playerSelection={playerSelection} botSelection={botSelection} />
+        return <Lose playerSelection={playerSelection} botSelection={botSelection} startCount={3} />
     }
     if(playerSelection === "scissors" && botSelection === "paper") {
         return <Win playerSelection={playerSelection} botSelection={botSelection} />
     }
     if(playerSelection === "scissors" && botSelection === "rock") {
-        return <Lose playerSelection={playerSelection} botSelection={botSelection} />
+        return <Lose playerSelection={playerSelection} botSelection={botSelection} startCount={3} />
     }
 }

@@ -4,8 +4,8 @@ import playAgainOnClick from "../functions/playAgainOnClick"
 import VS from "./Vs"
 import { StyledMain, PlayAgain } from "./styled/lib";
 
-const Lose = ({ playerSelection, botSelection }) => {
-  const [count, setCount] = useState(3);
+const Lose = ({ playerSelection, botSelection, startCount }) => {
+  const [count, setCount] = useState(startCount);
 
   useEffect(() => {
     if (count > 0) {
