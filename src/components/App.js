@@ -1,11 +1,13 @@
 import React from 'react';
 
+import PlayerSelection from "./PlayerSelection"
 import { StyledBody, StyledMain } from "../styled/lib"
 
-function App() {
+const App = () => {
   return (
     <StyledBody>
       <StyledMain>
+        <PlayerSelection />
       </StyledMain>
     </StyledBody>
   );
