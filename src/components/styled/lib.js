@@ -79,3 +79,17 @@ export const PlayerNameContainer = styled.div`
   font-size: 50px;
   width: 50.5vw;
 `
+
+export const PlayAgain = styled.div`
+  margin-top: 80px;
+  font-weight: bold;
+  padding: 10px 0 10px 10px;
+  background-color: lightgray;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: gray;
+  border-radius: 7px;
+  box-shadow: 0 10px grey;
+  font-size: 50px;
+  cursor: pointer;
+`
+

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import VS from "./Vs"
-import { StyledMain } from "./styled/lib";
+import { StyledMain, PlayAgain } from "./styled/lib";
 
 const Win = ({ playerSelection, botSelection }) => {
   const [count, setCount] = useState(3);
@@ -17,7 +17,10 @@ const Win = ({ playerSelection, botSelection }) => {
   return (
     <StyledMain result={count === 0 ? "win" : "neutral"}>
       {count === 0 ? (
-        "Winner!"
+        <>
+          Winner!
+          <PlayAgain>Play Again?</PlayAgain>
+        </>
       ) : (
         <VS playerSelection={playerSelection} botSelection={botSelection} />
       )}
