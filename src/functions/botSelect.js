@@ -1,4 +1,4 @@
-export default function botSelection() {
+export default function botSelect() {
     const random = Math.random()
 
     if(random < 0.33) {
