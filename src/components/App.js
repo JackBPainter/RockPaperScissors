@@ -6,12 +6,13 @@ import { StyledBody, StyledMain } from "./styled/lib"
 
 const App = () => {
   const [seconds, setSeconds] = useState(15)
+  const [playerSelection, setPlayerSelection] = useState(null)
 
   return (
     <StyledBody>
       <StyledMain>
         <Timer seconds={seconds} setSeconds={setSeconds} />
-        <PlayerSelection />
+        <PlayerSelection setPlayerSelection={setPlayerSelection} />
       </StyledMain>
     </StyledBody>
   );
