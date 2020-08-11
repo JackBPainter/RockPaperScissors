@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import botSelect from "../functions/botSelect"
+import gameDecider from "../functions/gameDecider"
 
 import PlayerSelection from "./PlayerSelection"
 import Timer from "./Timer"
@@ -14,15 +15,19 @@ const App = () => {
     setBotSelection(botSelect())
   }, [])
 
-  console.log(playerSelection)
   console.log(botSelection)
+  console.log(playerSelection)
 
   return (
     <StyledBody>
-      <StyledMain>
+    {playerSelection === null ?
+      <StyledMain result={"win"}>
         <Timer seconds={seconds} setSeconds={setSeconds} />
         <PlayerSelection setPlayerSelection={setPlayerSelection} />
       </StyledMain>
+      :
+      gameDecider(playerSelection, botSelection)
+    }
     </StyledBody>
   );
 }

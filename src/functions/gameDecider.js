@@ -1,3 +1,5 @@
+import React from "react"
+
 import Win from "../components/Win"
 import Draw from "../components/Draw"
 import Lose from "../components/Lose"
