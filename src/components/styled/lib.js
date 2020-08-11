@@ -10,8 +10,9 @@ export const StyledBody = styled.body`
 
 export const StyledMain = styled.main`
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
   width: 80vw;
   height: 100vh;
   background: #fff;
@@ -45,4 +46,21 @@ export const StyledOption = styled.div`
 export const StyledOptionImg = styled.img`
   height: 60%;
   width: 60%;
+`
+
+// Timer
+
+export const StyledTimer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13vw;
+  width: 13vw;
+  min-height: 200px;
+  min-width: 200px;
+  font-size: 150px;
+  font-family: impact;
+  background: #e4e4e4;
+  border: 2px solid black;
+  border-radius: 50px;
 `
