@@ -3,19 +3,19 @@ import React from "react";
 import rock from "../images/rock.png"
 import paper from "../images/paper.png"
 import scissors from "../images/scissors.png"
-import { StyledOptionContainer, StyledOption } from "./styled/lib";
+import { StyledOptionContainer, StyledOption, StyledOptionImg } from "./styled/lib";
 
 const PlayerSelection = () => {
   return (
     <StyledOptionContainer>
       <StyledOption>
-        <img src={rock} alt="Rock Icon"></img>
+        <StyledOptionImg src={rock} alt="Rock Icon" />
       </StyledOption>
       <StyledOption>
-        <img src={paper} alt="Paper Icon"></img>
+        <StyledOptionImg src={paper} alt="Paper Icon" />
       </StyledOption>
       <StyledOption>
-        <img src={scissors} alt="Scissors Icon"></img>
+        <StyledOptionImg src={scissors} alt="Scissors Icon" />
       </StyledOption>
     </StyledOptionContainer>
   );
