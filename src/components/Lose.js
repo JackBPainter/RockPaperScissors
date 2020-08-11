@@ -4,7 +4,7 @@ import { StyledMain } from "./styled/lib"
 
 const Lose = () => {
     return (
-        <StyledMain result={"lose"}>Loser!</StyledMain>
+        <StyledMain result={"lose"}>Game Over!</StyledMain>
     )
 }
 
