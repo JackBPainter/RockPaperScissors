@@ -1,25 +1,27 @@
-import { StyledMain } from "../components/styled/lib"
+import Win from "../components/Win"
+import Draw from "../components/Draw"
+import Lose from "../components/Lose"
 
 export default function gameDecider(playerSelection, botSelection) {
     if(playerSelection === botSelection) {
-        return // draw component
+        return <Draw />
     }
     if(playerSelection === "rock" && botSelection === "scissors") {
-        return // win component
+        return <Win />
     }
     if(playerSelection === "rock" && botSelection === "paper") {
-        return // lose component
+        return <Lose />
     }
     if(playerSelection === "paper" && botSelection === "rock") {
-        return // win component
+        return <Win />
     }
     if(playerSelection === "paper" && botSelection === "scissors") {
-        return // lose component
+        return <Lose />
     }
     if(playerSelection === "scissors" && botSelection === "paper") {
-        return // win component
+        return <Win />
     }
     if(playerSelection === "scissors" && botSelection === "rock") {
-        return // lose component
+        return <Lose />
     }
 }
