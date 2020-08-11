@@ -11,7 +11,7 @@ export const StyledBody = styled.body`
 
 export const StyledMain = styled.main`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: ${({ result }) => result ? "center" : "space-evenly"};
   align-items: center;
   flex-direction: column;
   width: 80vw;
@@ -67,4 +67,15 @@ export const StyledTimer = styled.div`
   background: #e4e4e4;
   border: 2px solid black;
   border-radius: 50px;
+`
+
+// Win / Draw / Lose
+
+export const PlayerNameContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 50px;
+  width: 50.5vw;
 `

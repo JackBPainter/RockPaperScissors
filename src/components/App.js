@@ -20,7 +20,7 @@ const App = () => {
   return (
     <StyledBody>
     {playerSelection === null ?
-      <StyledMain result={"neutral"}>
+      <StyledMain>
         <Timer seconds={seconds} setSeconds={setSeconds} />
         <PlayerSelection setPlayerSelection={setPlayerSelection} />
       </StyledMain>
