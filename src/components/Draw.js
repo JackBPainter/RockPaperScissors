@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import iconSelect from "../functions/iconSelect";
 
-import { StyledMain, StyledOptionContainer, StyledOption } from "./styled/lib";
+import VS from "./Vs"
+import { StyledMain } from "./styled/lib";
 
 const Draw = ({ playerSelection, botSelection }) => {
   const [count, setCount] = useState(3);
@@ -19,11 +19,7 @@ const Draw = ({ playerSelection, botSelection }) => {
       {count === 0 ? (
         "Draw!"
       ) : (
-        <StyledOptionContainer>
-          <StyledOption>{iconSelect(playerSelection)}</StyledOption>
-          VS
-          <StyledOption>{iconSelect(botSelection)}</StyledOption>
-        </StyledOptionContainer>
+        <VS playerSelection={playerSelection} botSelection={botSelection} />
       )}
     </StyledMain>
   );
