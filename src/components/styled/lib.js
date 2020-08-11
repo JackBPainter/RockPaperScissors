@@ -30,8 +30,9 @@ export const StyledOption = styled.div`
   justify-content: center;
   align-items: center;
   height: 100px;
-  width: 150px;
+  width: 100px;
   background: #e4e4e4;
   border: 2px solid black;
   border-radius: 10px;
+  cursor: pointer;
 `
