@@ -26,6 +26,8 @@ export const StyledOptionContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  font-size: 135px;
   width: 50vw;
 `
 

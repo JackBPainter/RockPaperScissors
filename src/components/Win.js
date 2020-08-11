@@ -1,13 +1,18 @@
-import React from "react"
+import React from "react";
+import iconSelect from "../functions/iconSelect";
 
-import { StyledMain } from "./styled/lib"
+import { StyledMain, StyledOptionContainer, StyledOption } from "./styled/lib";
 
 const Win = ({ playerSelection, botSelection }) => {
-    return (
-        <StyledMain result={"win"}>
-            Winner!
-        </StyledMain>
-    )
-}
+  return (
+    <StyledMain result={"win"}>
+      <StyledOptionContainer>
+        <StyledOption>{iconSelect(playerSelection)}</StyledOption>
+        VS
+        <StyledOption>{iconSelect(botSelection)}</StyledOption>
+      </StyledOptionContainer>
+    </StyledMain>
+  );
+};
 
-export default Win
+export default Win;
