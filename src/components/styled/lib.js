@@ -16,7 +16,7 @@ export const StyledMain = styled.main`
   flex-direction: column;
   width: 80vw;
   height: 100vh;
-  font-size: 200px;
+  font-size: 150px;
   ${({ result }) => handleColours(result)};
 ` 
 
@@ -83,7 +83,7 @@ export const PlayerNameContainer = styled.div`
 export const PlayAgain = styled.div`
   margin-top: 80px;
   font-weight: bold;
-  padding: 10px 0 10px 10px;
+  padding: 10px 10px 10px 10px;
   background-color: lightgray;
   text-shadow: -1px -1px black, 1px 1px white;
   color: gray;

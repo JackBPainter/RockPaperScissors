@@ -14,7 +14,7 @@ const App = () => {
   useEffect(() => {
     setBotSelection(botSelect())
   }, [])
-
+  
   console.log(botSelection)
 
   return (

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import playAgainOnClick from "../functions/playAgainOnClick"
 
 import VS from "./Vs"
 import { StyledMain, PlayAgain } from "./styled/lib";
@@ -19,7 +20,7 @@ const Lose = ({ playerSelection, botSelection }) => {
       {count === 0 ? (
         <>
           Game Over!
-          <PlayAgain>Try Again?</PlayAgain>
+          <PlayAgain onClick={() => playAgainOnClick()}>Play Again</PlayAgain>
         </>      
       ) : (
         <VS playerSelection={playerSelection} botSelection={botSelection} />
