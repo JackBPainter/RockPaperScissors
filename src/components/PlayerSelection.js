@@ -1,6 +1,6 @@
 import React from "react";
 
-import { StyledOptionContainer, StyledOption } from "../styled/lib";
+import { StyledOptionContainer, StyledOption } from "./styled/lib";
 
 const PlayerSelection = () => {
   return (

@@ -32,4 +32,6 @@ export const StyledOption = styled.div`
   height: 100px;
   width: 150px;
   background: #e4e4e4;
+  border: 2px solid black;
+  border-radius: 10px;
 `

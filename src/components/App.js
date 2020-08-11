@@ -1,7 +1,7 @@
 import React from 'react';
 
 import PlayerSelection from "./PlayerSelection"
-import { StyledBody, StyledMain } from "../styled/lib"
+import { StyledBody, StyledMain } from "./styled/lib"
 
 const App = () => {
   return (
