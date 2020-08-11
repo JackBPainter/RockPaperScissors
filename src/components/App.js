@@ -15,13 +15,10 @@ const App = () => {
     setBotSelection(botSelect())
   }, [])
 
-  console.log(botSelection)
-  console.log(playerSelection)
-
   return (
     <StyledBody>
     {playerSelection === null ?
-      <StyledMain result={"win"}>
+      <StyledMain result={"neutral"}>
         <Timer seconds={seconds} setSeconds={setSeconds} />
         <PlayerSelection setPlayerSelection={setPlayerSelection} />
       </StyledMain>

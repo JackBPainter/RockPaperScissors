@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import handleBackground from "../../functions/handleBackground"
 
 // App
 
@@ -15,8 +16,9 @@ export const StyledMain = styled.main`
   flex-direction: column;
   width: 80vw;
   height: 100vh;
-  background: #fff;
-`
+  background: ${({ result }) => handleBackground(result)};
+
+`  /* neutral #fff */
 
 // PlayerSelection
 
