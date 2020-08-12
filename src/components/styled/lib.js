@@ -3,7 +3,7 @@ import handleColours from "../../functions/handleColours"
 
 // App
 
-export const StyledBody = styled.body`
+export const StyledBody = styled.div`
   display: flex;
   justify-content: center;
   background: #083846;
