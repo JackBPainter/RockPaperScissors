@@ -6,11 +6,15 @@ import scissors from "../images/scissors.png"
 import { StyledOptionImg } from "../components/styled/lib";
 
 export default function iconSelect(selection) {
-    if(selection === "rock") {
-        return <StyledOptionImg src={rock} alt="Rock Icon" />
+    if(selection) {
+        if(selection === "rock") {
+            return <StyledOptionImg src={rock} alt="Rock Icon" />
+        }
+        if(selection === "paper") {
+            return <StyledOptionImg src={paper} alt="Paper Icon" />
+        }
+        if(selection === "scissors") {
+            return <StyledOptionImg src={scissors} alt="Scissors Icon" />
+        }
     }
-    if(selection === "paper") {
-        return <StyledOptionImg src={paper} alt="Paper Icon" />
-    }
-    return <StyledOptionImg src={scissors} alt="Scissors Icon" />
 }

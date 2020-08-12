@@ -17,13 +17,13 @@ const Draw = ({ playerSelection, botSelection }) => {
 
   return (
     <StyledMain result={count === 0 ? "draw" : "neutral"}>
-      {count === 0 ? (
+      {count !== 0 ? (
+        <VS playerSelection={playerSelection} botSelection={botSelection} />   
+      ) : (
         <>
           Draw!
           <PlayAgain onClick={() => playAgainOnClick()}>Try Again</PlayAgain>
-        </>
-      ) : (
-        <VS playerSelection={playerSelection} botSelection={botSelection} />
+        </>         
       )}
     </StyledMain>
   );

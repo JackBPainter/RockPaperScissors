@@ -30,7 +30,7 @@ const App = () => {
   if(playerSelection !== null) {
     return (
       <StyledBody>
-       {gameDecider(playerSelection, botSelection)}
+        {gameDecider(playerSelection, botSelection)}
       </StyledBody>
     )
   }
@@ -42,19 +42,6 @@ const App = () => {
       </StyledBody>
     )
   }
-  
-  return (
-    <StyledBody>
-    {playerSelection === null ?
-      <StyledMain>
-        <Timer seconds={seconds} setSeconds={setSeconds} />
-        <PlayerSelection setPlayerSelection={setPlayerSelection} />
-      </StyledMain>
-      :
-      gameDecider(playerSelection, botSelection)
-    }
-    </StyledBody>
-  );
 }
 
 export default App;

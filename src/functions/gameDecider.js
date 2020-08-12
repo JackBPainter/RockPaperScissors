@@ -6,7 +6,7 @@ import Lose from "../components/Lose"
 
 export default function gameDecider(playerSelection, botSelection) {
     if(playerSelection === botSelection) {
-        return <Draw />
+        return <Draw playerSelection={playerSelection} botSelection={botSelection}/>
     }
     if(playerSelection === "rock" && botSelection === "scissors") {
         return <Win playerSelection={playerSelection} botSelection={botSelection} />

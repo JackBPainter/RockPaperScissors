@@ -16,7 +16,7 @@ export const StyledMain = styled.main`
   flex-direction: column;
   width: 80vw;
   height: 100vh;
-  font-size: 150px;
+  font-size: 110px;
   ${({ result }) => handleColours(result)};
 ` 
 
@@ -27,7 +27,7 @@ export const StyledOptionContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-size: 135px;
+  font-size: 12vw;
   width: 50vw;
 `
 
@@ -69,16 +69,18 @@ export const StyledTimer = styled.div`
   border-radius: 50px;
 `
 
-// Win / Draw / Lose
+// VS
 
 export const PlayerNameContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-size: 50px;
+  font-size: 6vw;
   width: 50.5vw;
 `
+
+// Win / Draw / Lose
 
 export const PlayAgain = styled.div`
   margin-top: 80px;
@@ -89,7 +91,7 @@ export const PlayAgain = styled.div`
   color: gray;
   border-radius: 7px;
   box-shadow: 0 10px grey;
-  font-size: 50px;
+  font-size: 65px;
   cursor: pointer;
 `
 

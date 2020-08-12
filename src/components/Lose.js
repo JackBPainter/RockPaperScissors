@@ -17,13 +17,13 @@ const Lose = ({ playerSelection, botSelection, startCount }) => {
 
   return (
     <StyledMain result={count === 0 ? "lose" : "neutral"}>
-      {count === 0 ? (
+      {count !== 0 ? (
+        <VS playerSelection={playerSelection} botSelection={botSelection} />   
+      ) : (
         <>
           Game Over!
-          <PlayAgain onClick={() => playAgainOnClick()}>Play Again</PlayAgain>
-        </>      
-      ) : (
-        <VS playerSelection={playerSelection} botSelection={botSelection} />
+          <PlayAgain onClick={() => playAgainOnClick()}>Try Again</PlayAgain>
+        </>         
       )}
     </StyledMain>
   );

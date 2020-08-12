@@ -12,7 +12,7 @@ const VS = ({ playerSelection, botSelection }) => {
       </PlayerNameContainer>
       <StyledOptionContainer>
         <StyledOption>{iconSelect(playerSelection)}</StyledOption>
-        VS
+          VS
         <StyledOption>{iconSelect(botSelection)}</StyledOption>
       </StyledOptionContainer>
     </>
